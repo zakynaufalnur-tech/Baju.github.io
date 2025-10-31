@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FzStore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  padding-bottom: 80px;
+}
+
+.header {
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  position: relative;
+  font-size: 24px;
+}
+
+.profile-icon .notif {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  background: #eee;
+  cursor: pointer;
+}
+
+.promo-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.promo-card {
+  background: #ff5c00;
+  color: white;
+  width: 45%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.promo-card img {
+  width: 70%;
+  margin: 5px 0;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 14px;
+  color: #000;
+}
+
+.price s {
+  color: red;
+  font-size: 12px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.nav-item {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #ff5c00;
+}
+
+  </style>
+  <header class="header">
+    <div class="top-bar">
+      <button class="back-btn">←</button>
+      <div class="profile-icon">👤<span class="notif">+</span></div>
+    </div>
+    <h1 class="logo">FzStore</h1>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari produk..." />
+      <button>🔍</button>
+    </div>
+
+    <div class="promo-section">
+      <div class="promo-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Diskon" />
+        <p>Diskon<br>50%</p>
+      </div>
+      <div class="promo-card">
+        <img src= "https://cdn-icons-png.flaticon.com/512/892/892458.png"alt="Produk Baru" />
+        <p>Produk<br>terbaru</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Produk Terbaru :</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Blace" />
+        <h3>T shirt Blace</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Naga" />
+        <h3>T shirt Naga</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Kece" />
+        <h3>T shirt Kece</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Juos" />
+        <h3>T shirt Juos</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Alir" />
+        <h3>T shirt Alir</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Tshirt Arab" />
+        <h3>T shirt Arab</h3>
+        <p>Kaos</p>
+        <span class="price"><s>Rp100.000</s> Rp 50.000</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bottom-nav">
+    <a href="#" class="nav-item active">🏠<br>Beranda</a>
+    <a href="#" class="nav-item">🔥<br>Trending</a>
+    <a href="#" class="nav-item">🎥<br>Live</a>
+    <a href="#" class="nav-item">❤️<br>Disukai</a>
+    <a href="#" class="nav-item">👤<br>Saya</a>
+  </footer>
+</body>
+</html>
